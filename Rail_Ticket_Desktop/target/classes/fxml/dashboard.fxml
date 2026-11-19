@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.rainticket.ui.DashboardController" styleClass="app-root">
+  <top>
+    <HBox alignment="CENTER_LEFT" spacing="12" styleClass="topbar">
+      <Label text="🚆 RAIL TICKET" styleClass="brand-title"/>
+      <Region HBox.hgrow="ALWAYS"/>
+      <VBox alignment="CENTER_RIGHT" spacing="3">
+        <Label fx:id="userLabel" styleClass="user-name"/>
+        <Label fx:id="roleLabel" styleClass="small-text"/>
+      </VBox>
+    </HBox>
+  </top>
+  <left><VBox fx:id="menuBox" spacing="9" styleClass="sidebar"/></left>
+  <center>
+    <ScrollPane fitToWidth="true" styleClass="content-scroll">
+      <VBox fx:id="contentBox" spacing="18" styleClass="content-area"/>
+    </ScrollPane>
+  </center>
+</BorderPane>

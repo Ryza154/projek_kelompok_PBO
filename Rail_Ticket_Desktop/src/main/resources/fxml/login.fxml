@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.rainticket.ui.LoginController" styleClass="login-root">
+  <left>
+    <VBox alignment="CENTER_LEFT" spacing="20" styleClass="login-brand">
+      <Label text="🚆 RAIL TICKET" styleClass="brand-title"/>
+      <Label text="Perjalanan Lebih Mudah, Tiket Kereta dalam Genggaman!" styleClass="brand-head" wrapText="true"/>
+      <Label text="Pesan tiket kereta dengan cepat, aman, dan praktis melalui satu aplikasi." styleClass="brand-copy" wrapText="true"/>
+      <Label text="AMAN  •  MUDAH  •  TERPERCAYA" styleClass="brand-tag"/>
+    </VBox>
+  </left>
+  <center>
+    <VBox alignment="CENTER" spacing="14" styleClass="login-form">
+      <Label text="Selamat Datang!" styleClass="page-title"/>
+      <Label text="Masuk ke akun Rail Ticket Anda." styleClass="muted"/>
+      <TextField fx:id="emailField" promptText="Alamat email" maxWidth="340"/>
+      <StackPane maxWidth="340">
+        <PasswordField fx:id="passwordField" promptText="Password" styleClass="password-with-eye" onAction="#login"/>
+        <TextField fx:id="passwordVisibleField" promptText="Password" styleClass="password-with-eye" visible="false" managed="false" onAction="#login"/>
+        <Button fx:id="togglePasswordButton" text="👁" onAction="#togglePassword" styleClass="eye-button" StackPane.alignment="CENTER_RIGHT" focusTraversable="false"/>
+      </StackPane>
+      <Button text="Masuk ke Rail Ticket" onAction="#login" maxWidth="340" styleClass="primary"/>
+      <Button text="Daftar sebagai Pelanggan" onAction="#register" maxWidth="340" styleClass="outline"/>
+      <Label fx:id="messageLabel" styleClass="error-text" wrapText="true"/>
+      <Separator maxWidth="340"/>
+      <Label text="Admin: admin@rainticket.id / admin123" styleClass="small-text"/>
+      <Label text="Pelanggan: pelanggan@rainticket.id / user123" styleClass="small-text"/>
+    </VBox>
+  </center>
+</BorderPane>

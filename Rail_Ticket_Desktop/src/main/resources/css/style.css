@@ -1,0 +1,295 @@
+/* =========================================================
+   RAIL TICKET - STYLE UTAMA
+   Setiap selector dipisahkan dan disusun ke bawah agar mudah
+   dibaca serta diedit.
+   ========================================================= */
+
+/* 1. Pengaturan dasar */
+* {
+    -fx-font-family: "Arial";
+}
+
+.root,
+.login-root {
+    -fx-background-color: #f2f6fd;
+}
+
+/* 2. Halaman login */
+.login-brand {
+    -fx-background-color: linear-gradient(to bottom right, #071d3d, #0864d9);
+    -fx-padding: 55;
+    -fx-pref-width: 420;
+}
+
+.brand-title {
+    -fx-text-fill: white;
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+}
+
+.brand-head {
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.brand-copy {
+    -fx-text-fill: #dceaff;
+    -fx-font-size: 15px;
+}
+
+.brand-tag {
+    -fx-text-fill: #b8dcff;
+    -fx-font-weight: bold;
+    -fx-padding: 18 0 0 0;
+}
+
+.login-form {
+    -fx-padding: 42;
+}
+
+/* 3. Input dan pilihan */
+.text-field,
+.password-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: white;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #d5e1f3;
+    -fx-padding: 10;
+}
+
+.text-field:focused,
+.password-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #4b9bea;
+    -fx-border-width: 1.5;
+}
+
+/* 4. Tombol */
+.primary {
+    -fx-background-color: #0864d9;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 9;
+    -fx-padding: 11 20;
+    -fx-cursor: hand;
+}
+
+.primary:hover {
+    -fx-background-color: #034da9;
+}
+
+.primary:disabled {
+    -fx-background-color: #aabbd0;
+    -fx-text-fill: #f5f7fa;
+}
+
+.outline {
+    -fx-background-color: white;
+    -fx-text-fill: #0759bd;
+    -fx-border-color: #b9d0ef;
+    -fx-border-radius: 9;
+    -fx-background-radius: 9;
+    -fx-padding: 10 18;
+}
+
+.outline:hover {
+    -fx-background-color: #edf5ff;
+}
+
+.danger {
+    -fx-background-color: #e94b54;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 10 16;
+}
+
+.danger:hover {
+    -fx-background-color: #c93440;
+}
+
+/* 5. Navigasi dan header */
+.topbar {
+    -fx-background-color: #08254b;
+    -fx-padding: 15 25;
+}
+
+.user-name {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.sidebar {
+    -fx-background-color: #0b2d58;
+    -fx-padding: 22 14;
+    -fx-pref-width: 205;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e4efff;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 14;
+    -fx-background-radius: 8;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #164b88;
+}
+
+/* 6. Area konten */
+.content-scroll {
+    -fx-background: #f2f6fd;
+    -fx-background-color: transparent;
+}
+
+.content-area {
+    -fx-padding: 28;
+}
+
+.page-title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #102c50;
+}
+
+.section-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #16375e;
+}
+
+.muted {
+    -fx-text-fill: #71829a;
+    -fx-font-size: 13px;
+}
+
+.small-text {
+    -fx-text-fill: #aebed2;
+    -fx-font-size: 11px;
+}
+
+/* 7. Panel, kartu jadwal, dan statistik */
+.panel {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-radius: 12;
+    -fx-border-color: #e0e9f6;
+    -fx-border-radius: 12;
+}
+
+.metric {
+    -fx-background-color: white;
+    -fx-text-fill: #0759bd;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 22;
+    -fx-background-radius: 12;
+    -fx-border-color: #e1eaf7;
+    -fx-border-radius: 12;
+}
+
+.search-row {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-background-radius: 10;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* 8. Tabel */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 9;
+    -fx-border-color: #dce6f4;
+}
+
+.table-view .column-header {
+    -fx-background-color: #eaf2ff;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #16375e;
+    -fx-font-weight: bold;
+}
+
+/* 9. Pesan validasi */
+.error-text {
+    -fx-text-fill: #d43d48;
+}
+
+/* =========================================================
+   Dialog pembayaran
+   ========================================================= */
+.pay-total {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #071d3d;
+}
+
+.pay-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0864d9;
+}
+
+.pay-info {
+    -fx-background-color: #eaf2ff;
+    -fx-background-radius: 8;
+    -fx-padding: 10 12 10 12;
+}
+
+.pay-info-text {
+    -fx-text-fill: #071d3d;
+    -fx-font-size: 13px;
+}
+
+.pay-section {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #071d3d;
+    -fx-padding: 8 0 0 0;
+}
+
+.pay-step-no {
+    -fx-background-color: #0864d9;
+    -fx-background-radius: 12;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 2 0 2 0;
+}
+
+.pay-step-text {
+    -fx-font-size: 13px;
+    -fx-text-fill: #1f2a44;
+}
+
+.pay-warning {
+    -fx-text-fill: #c0392b;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   Kolom password dengan tombol mata
+   ========================================================= */
+.password-with-eye {
+    -fx-padding: 10 44 10 10;
+}
+
+.eye-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 9;
+    -fx-text-fill: #52627f;
+    -fx-font-size: 15px;
+    -fx-padding: 4 10 4 10;
+    -fx-cursor: hand;
+}
+
+.eye-button:hover {
+    -fx-background-color: #eaf2ff;
+}
